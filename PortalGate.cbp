@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PortalGate" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PortalGate" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/MinGW/bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PortalGate" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/MinGW/bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-lglut" />
+			<Add option="-lassimp" />
+			<Add option="-lopenal" />
+			<Add option="-lalut" />
+			<Add option="-lSOIL" />
+			<Add library="glut" />
+			<Add library="GL" />
+			<Add library="GLU" />
+			<Add library="Xxf86vm" />
+			<Add directory="$(#freeglut.lib)" />
+		</Linker>
+		<Unit filename="src/AABB3D.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/AABB3D.h" />
+		<Unit filename="src/Array.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Array.h" />
+		<Unit filename="src/Camera.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Camera.h" />
+		<Unit filename="src/Cube.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Cube.h" />
+		<Unit filename="src/Display.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Display.h" />
+		<Unit filename="src/Keyboard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Keyboard.h" />
+		<Unit filename="src/Mouse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Mouse.h" />
+		<Unit filename="src/Pillar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Pillar.h" />
+		<Unit filename="src/Skybox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Skybox.h" />
+		<Unit filename="src/Sound.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Sound.h" />
+		<Unit filename="src/Stargate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Stargate.h" />
+		<Unit filename="src/Tile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Tile.h" />
+		<Unit filename="src/Turret.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Turret.h" />
+		<Unit filename="src/includes.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
